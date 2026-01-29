@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
 http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
 	    <http:listener-config name="sapi-notification-httpListenerConfig">
-        <http:listener-connection host="0.0.0.0" port="8080" />
+        <http:listener-connection host="0.0.0.0" port="${secure::http.port}" />
     </http:listener-config>
     <apikit:config name="sapi-notification-config" api="resource::859200e0-96c9-40c4-918e-b36c5d106407:sapi-notification:1.0.0:raml:zip:sapi-notification.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<jms:config name="JMS_Config" doc:name="JMS Config" doc:id="1b6bafe8-6323-47eb-9fcc-2473052929fb" >
