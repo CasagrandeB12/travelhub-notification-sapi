@@ -29,14 +29,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<!-- 				<configuration> -->
-				<!-- 					<sharedLibraries> -->
-				<!-- 						<sharedLibrary> -->
-				<!-- 							<groupId>org.apache.activemq</groupId> -->
-				<!-- 							<artifactId>activemq-client</artifactId> -->
-				<!-- 						</sharedLibrary> -->
-				<!-- 					</sharedLibraries> -->
-				<!-- 				</configuration> -->
 				<configuration>
 					<sharedLibraries>
 						<sharedLibrary>
@@ -65,7 +57,7 @@
 		<dependency>
 			<groupId>859200e0-96c9-40c4-918e-b36c5d106407</groupId>
 			<artifactId>sapi-notification</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
 		</dependency>

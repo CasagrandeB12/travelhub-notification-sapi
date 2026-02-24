@@ -1,5 +1,5 @@
 http:
-  port: ${http.port}
+  port: "8083" #"${http.port}"
 
 jms.notification:
   broker: "tcp://localhost:61616"

@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/
 	    <http:listener-config name="sapi-notification-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="${secure::http.port}" />
     </http:listener-config>
-    <apikit:config name="sapi-notification-config" api="resource::859200e0-96c9-40c4-918e-b36c5d106407:sapi-notification:1.0.0:raml:zip:sapi-notification.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="sapi-notification-config" api="resource::859200e0-96c9-40c4-918e-b36c5d106407:sapi-notification:1.0.1:raml:zip:sapi-notification.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<jms:config name="JMS_Config" doc:name="JMS Config" doc:id="1b6bafe8-6323-47eb-9fcc-2473052929fb" >
 		<jms:active-mq-connection username="${secure::jms.notification.username}" password="${secure::jms.notification.password}">
 			<jms:factory-configuration brokerUrl="${secure::jms.notification.broker}" />
